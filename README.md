@@ -19,10 +19,22 @@ Asegúrate de tener instalado en tu entorno:
 
 ## 🚀 Instalación paso a paso
 
+### 0. Crear la base de datos manualmente
+
+Antes de ejecutar las migraciones, asegúrate de crear una base de datos llamada `concurso` en tu sistema MySQL.
+
+Puedes hacerlo con este comando si usas consola:
+
+```bash
+mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS concurso;"
+```
+
+O desde phpMyAdmin, DBeaver u otro cliente SQL.
+
 ### 1. Clona el repositorio o descarga el código
 
 ```bash
-git clone https://github.com/usuario/proyecto.git
+git clone https://github.com/diegobello/clientes-concurso
 cd proyecto
 ```
 
@@ -49,7 +61,7 @@ cp .env.example .env
 Edita el archivo `.env` con los datos de tu base de datos:
 
 ```
-DB_DATABASE=nombre_basedatos
+DB_DATABASE=concurso
 DB_USERNAME=usuario
 DB_PASSWORD=clave
 ```
