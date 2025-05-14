@@ -97,7 +97,7 @@ php artisan serve
 Accede en tu navegador a:
 
 ```
-http://127.0.0.1:8000
+http://127.0.0.1:8000/cliente
 ```
 
 ---
@@ -114,12 +114,28 @@ http://127.0.0.1:8000
 
 ---
 
+## 📄 Ver ganador
+
+Puedes ver la pagina del ganador
+
+```
+http://127.0.0.1:8000/cliente/ganador
+```
+
+---
+---
+
 ## 📄 Exportar clientes a Excel
 
 Puedes descargar un archivo Excel con todos los registros accediendo a:
 
 ```
-http://127.0.0.1:8000/clientes/exportar
+http://127.0.0.1:8000/cliente/exportar
+```
+o
+
+```
+Desde la pagina del ganador seleccionar el boton #Descargar Excel de registros#
 ```
 
 ---
